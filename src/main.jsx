@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
-import { RootLayout } from "./components/Layouts/RootLayout";
+import { BrowserRouter, Routes, Route } from "react-router";
 import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { Contact } from "./components/Pages/Contact";
-
+import { RootLayout } from "./components/Layouts/RootLayout";
 
 const root = document.getElementById("root");
 
