@@ -5,7 +5,7 @@ import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { Contact } from "./components/Pages/Contact";
 import { RootLayout } from "./components/Layouts/RootLayout";
-
+import './index.css';
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
