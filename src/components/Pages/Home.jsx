@@ -1,13 +1,12 @@
 
 import React from 'react';
 import { FetchData } from '../hooks/FetchData';
-import { About } from './About';
+import { User } from './User';
+
 
 export const Home = () => {
 
   const {data:users,error,loading} = FetchData('https://jsonplaceholder.typicode.com/users')
-console.log(users);
-
 
   return (
     <div>
@@ -30,10 +29,21 @@ console.log(users);
         {/* =========== Users Part ========== */}
         <div>
           {
-            users && 
-            <div>
-              
+            users ? 
+           (
+            <div className='grid grid-cols-3 gap-8 items-center justify-between'>
+              {
+                users.map((user)=><User key={user.id} user={user}/>)
+              }
             </div>
+           )
+           :
+          (<div>
+            <p>Users Not Found</p> 
+            
+          </div>
+          )
+
           }
         </div>
       
