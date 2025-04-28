@@ -29,7 +29,7 @@ export const FetchData = (url) => {
             loadData();
         },[url])
 
-        return (data,error,loading);
+        return {data,error,loading};
     }
   
 
