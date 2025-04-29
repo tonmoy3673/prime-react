@@ -15,6 +15,7 @@ const Navbar = () => {
                         <NavLink className={({isActive})=> `hover:text-cyan-700 ${isActive ? 'text-amber-700':'text-black'}` } to='/'>Home</NavLink>
                         <NavLink className={({isActive})=>`hover:text-cyan-700  ${isActive?'text-amber-700 ' : 'text-black'}`} to='about'>About</NavLink>
                         <NavLink className={({isActive})=>`hover:text-cyan-700 ${isActive?'text-amber-700 ' : 'text-black'}`} to='contact'>Contact</NavLink>
+                        <NavLink className={({isActive})=>`hover:text-cyan-700 ${isActive ? 'text-amber-700 ' : 'text-black'}`} to='postLayout'>Posts</NavLink>
                     </ul>
                 </div>
                 {/* ======== Button ========= */}

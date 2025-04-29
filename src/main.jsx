@@ -13,10 +13,9 @@ import { PrimeReactProvider } from "primereact/api";
 import UserDetails from "./components/Pages/UserDetails";
 import { PostLayout } from "./components/Layouts/PostLayout";
 import Posts from "./components/Pages/Posts";
-
+import { PostDetails } from "./components/Pages/PostDetails";
 
 const root = document.getElementById("root");
-
 ReactDOM.createRoot(root).render(
   <PrimeReactProvider>
     <BrowserRouter>
@@ -30,6 +29,7 @@ ReactDOM.createRoot(root).render(
     {/* ========== post layout ======= */}
     <Route path="postLayout" element={<PostLayout/>}>
       <Route index element={<Posts/>}/>
+      <Route path="posts/:postId" element={<PostDetails/>}/>
     </Route>
   </Routes>
   </BrowserRouter>
