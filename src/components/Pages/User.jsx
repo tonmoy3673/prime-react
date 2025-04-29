@@ -3,7 +3,6 @@ import React from 'react'
 import { Link } from 'react-router'
 
 export const User = ({user}) => {
-    
   return (
     <div className='text-center'>
         <h4>{user?.name}</h4>

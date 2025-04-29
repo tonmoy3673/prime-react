@@ -15,7 +15,7 @@ export const Home = () => {
         {/* ============ Loading ========== */}
         <div>
         {
-          loading && <p>Loading .........</p>
+          loading && <p className='text-cyan-500 text-center text-xl font-semibold'>Loading .........</p>
         }
         </div>
 

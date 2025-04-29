@@ -1,13 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
-    return (
+    return ( 
         <div className='px-18'>
             {/* ======== Band ===== */}
             <div className='py-5 flex items-center justify-between'>
-        
-                <h2 className='text-cyan-700 cursor-pointer font-semibold'>Prime <span>React</span></h2>
+               <Link to='/'>
+               <h2 className='text-cyan-700 cursor-pointer font-semibold text-xl'>Prime <span>React</span></h2>
+               </Link>
                     {/* ======= Menu Items ========= */}
                 <div className='mx-auto'>
                     <ul className='flex flex-col md:flex-row gap-y-6 md:gap-y-0 md:gap-x-10'>

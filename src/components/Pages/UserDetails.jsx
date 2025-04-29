@@ -4,7 +4,6 @@ import { FetchData } from '../hooks/FetchData';
 
 const UserDetails = () => {
     const {userId} = useParams();
-
     const {data:userInfo,error,loading}= FetchData(`https://jsonplaceholder.typicode.com/users/${userId}`)
     const {id,name,username,email,phone,website}=userInfo;
    
