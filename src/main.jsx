@@ -11,6 +11,8 @@ import './index.css';
 // import 'primeicons/primeicons.css'; // PrimeIcons for icons
 import { PrimeReactProvider } from "primereact/api";
 import UserDetails from "./components/Pages/UserDetails";
+import { PostLayout } from "./components/Layouts/PostLayout";
+import Posts from "./components/Pages/Posts";
 
 
 const root = document.getElementById("root");
@@ -24,6 +26,10 @@ ReactDOM.createRoot(root).render(
     <Route path="users/:userId" element={<UserDetails/>}/>
     <Route path="about" element={<About/>}/>
     <Route path="contact" element={<Contact/>}/>
+    </Route>
+    {/* ========== post layout ======= */}
+    <Route path="postLayout" element={<PostLayout/>}>
+      <Route index element={<Posts/>}/>
     </Route>
   </Routes>
   </BrowserRouter>
