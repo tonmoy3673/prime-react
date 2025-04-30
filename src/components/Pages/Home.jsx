@@ -23,9 +23,8 @@ export const Home = () => {
     const user ={
       name,email,phone,website
     };
-
-    
     console.log(user);
+    
 
 
 
