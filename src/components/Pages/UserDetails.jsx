@@ -5,7 +5,7 @@ import { FetchData } from '../hooks/FetchData';
 const UserDetails = () => {
     const {userId} = useParams();
     const {data:userInfo,error,loading}= FetchData(`https://jsonplaceholder.typicode.com/users/${userId}`)
-    const {id,name,username,email,phone,website}=userInfo;
+    const {id,name,email,phone,website}=userInfo;
    
 
     return (
@@ -37,7 +37,6 @@ const UserDetails = () => {
             <div className='py-2 text-center'>
             <h5>Id : {id}</h5>
             <h2>Name : {name}</h2>
-            <h4>User Name : {username}</h4>
             <p>Email : {email}</p>
             <p>Phone : {phone}</p>
             <p>Website : {website}</p>
